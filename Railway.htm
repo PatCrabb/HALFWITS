@@ -1,0 +1,107 @@
+<head>
+<style>
+.button {
+  color: black;
+  text-align: center;
+  valign: top;
+  font-size: 30px;
+  background-color: lightblue;
+  margin: 4px 2px;
+  height : 40px ;
+  width : 100px ;
+}  
+</style>
+</head>
+<body> <Font face=ARIAL BOLD>
+<H1> Railway controller </H1>
+<h2>Tom in the engine, Dick on points, Harry on lookout</h2>
+<h2>and Lucy is the station announcer and scheduler.</h2>
+
+<table border=0>
+<tr><td>
+<iframe src="http://TOM/?speed=60" height="40" width="300"  name="WinA" ></iframe>
+</td><td>
+<a href="http://TOM/1" target="WinA">
+<button class="button">&nbsp; Go &nbsp;</button></a>
+</td><td>
+<a href="http://TOM/2" target="WinA">
+<button class="button">Stop</button></a>
+</td><td>
+<a href="http://TOM/3" target="WinA">
+<button class="button">Back</button></a><br>
+</td></tr>
+
+<tr><td>
+<iframe src="http://DICK/" height="40" width="300"  name="WinB"></iframe>
+</td><td>
+<a href="http://DICK/1" target="WinB">
+<button class="button">Local</button></a>
+</td><td>
+<a href="http://DICK/2" target="WinB">
+<button class="button">Switch</button></a>
+</td><td>
+ <a href="http://DICK/3" target="WinB">
+<button class="button">Loop</button></a><br>
+</td><tr>
+
+
+<tr><td>
+<iframe src="http://HARRY/" height="40" width="300"  name="WinC"></iframe>
+</td>
+
+<td>
+<a href="http://HARRY/1" target="WinC">
+<button class="button">Left</button></a>
+</td>
+
+<td>.
+<!--
+<iframe src="http://HARRY/4?sensor=1" height="35" width="18"  name="WinC1"></iframe>
+<iframe src="http://HARRY/4?sensor=2" height="35" width="18"  name="WinC2"></iframe>
+<iframe src="http://HARRY/4?sensor=3" height="35" width="18"  name="WinC3"></iframe>
+<iframe src="http://HARRY/4?sensor=4" height="35" width="18"  name="WinC4"></iframe>
+--!>
+</td>
+
+<td>  
+<a href="http://HARRY/3" target="WinC">
+<button class="button">Right</button></a>
+</td></tr>
+
+<tr><td rowspan = 2>
+<iframe src="http://LUCY/" height="100" width="300"  name="WinD" ></iframe>
+</td><td>
+<a href="http://Tom" target="WinA">
+<button class="button"> Tom </button></a>
+</td><td>
+<a href="http://Dick" target="WinB">
+<button class="button">Dick</button></a>
+</td><td>
+<a href="http://Harry" target="WinC">
+<button class="button">Harry</button></a><br>
+</td></tr>
+
+<tr><td>
+<a href="http://LUCY/1" target="WinD">
+<button class="button">Luc1e</button></a>
+</td><td>
+<a href="http://LUCY/2" target="WinD">
+<button class="button">\\Deucy</button></a>
+</td><td>
+<a href="http://LUCY/3" target="WinD">
+<button class="button">Tracy</button></a><br>
+</td></tr>
+
+</table>
+<form action=http://lucy/4 method=get target=WinA>
+<p>How fast do you want to go ?:</p>
+<label>STOP</label>  <input type="radio"  name="speed" value="0">
+<label>SLOW</label>  <input selected type="radio" name="speed" value="25">
+<label>FAST</label>  <input type="radio" name="speed" value="50">
+<label>WHIZ</label>  <input type="radio" name="speed" value="100">
+<input type="submit" value="Go, go, GO!">
+</form> 
+
+
+</body></html>
+
